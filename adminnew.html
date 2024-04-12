@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="adminnew.css">
+</head>
+
+<body>
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="brand">
+            <h1>The Medic Sage</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Stock Details</a></li>
+            <li><a href="#  ">Accountant</a></li>
+            <li><a href="#">Order Details</a></li>
+            <li><a href="#">Earnings</a></li>
+            <li><a href="#">Connect Employee</a></li>
+            <li><a href="#">Meeting</a></li>
+            <li><a href="#">Customers Details</a></li>
+            <li><a href="#">Doctors Info</a></li>
+        </ul>
+    </div>
+
+    <!-- Centered button for checking stock -->
+    <div class="centered-button">
+        <button id="checkStockBtn" onclick="changeColor()">Check Low Stock</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Low Stock Alert!</h2>
+            <p>We have low stock of <strong>Morphine</strong>. Please restock soon.</p>
+        </div>
+    </div>
+    <div class="table-container">
+        <table id="medicineTable">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Medicine Name</th>
+                    <th>Quantity Left</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample rows with random data -->
+                <tr>
+                    <td>1</td>
+                    <td>Paracetamol</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aspirin</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ibuprofen</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Amoxicillin</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Cetrizine</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Codeine</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Hydrochlorothiazide</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Ranitidine</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Morphine</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Lisinopril</td>
+                    <td>90</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="adminnew.js"></script>
+</body>
+
+</html>
